@@ -268,7 +268,7 @@ function init (){
             anchor: [0, 0],
             anchorXUnits: 'fraction',
             anchorYUnits: 'pixels',
-            src: 'Icons/SVG/Health.svg',
+            src: 'Icons/SVG/health.svg',
             opacity: 0.9  // Custom opacity value between 0 (transparent) and 1 (opaque)
             
        
