@@ -1,0 +1,389 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kibera Webmap</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- Local files -->
+  <!--CSS-->
+  <link rel="stylesheet" href="css/base.css">
+
+   <!-- Non local files-->
+  <!--Additional JS-->
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!--Additional CSS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!--Leaflet-->
+  <!--Additional-->
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+  <link rel="stylesheet" href="css/L.Icon.Pulse.css" />
+  <script src="js/L.Icon.Pulse.js"></script>
+</head>
+
+<body style="overflow-y: hidden;">
+  <!-- Nav bar-->
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
+
+      <!--Navbar logo and topic-->
+      <ul class="logo">
+        <li>
+          <a href="index.html"></a><i class="fab fa-500px"></i> 
+        </li>
+        <li>
+          <li><a href="#home"><i aria-hidden="true"></i><h1> Mapping of Kibera Slum</h1></a>
+        </li>
+      </ul>
+
+  
+      <!-- Navbar Links -->
+        <ul class="topnav-right">
+          <li class = "toplinks"><a href="#home"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+          <li class = "toplinks" style="border-right: solid 1px rgba(160, 160, 160, 0.3);"><a href="#home"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign in</a></li>
+        </ul> 
+        <ul class="menuIcon openbtn " onclick="openNav()" style="right: -10px !important; top:2px !important;">
+        <li> 
+          <span class="icon icon-bars"></span>
+          <span class="icon icon-bars overlay"></span>
+        </li>
+        </ul>  
+    </div>
+  </nav>
+
+    <!--Second navbar-->
+    <nav id="navbar">
+      
+      <ul class="bottomnav-left">
+        <li class = "bottomlinks"><a href="Index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li class = "bottomlinks"><a href="Geoportal.html"class="active"><i class="fa fa-fw fa-globe"></i>Geoportal</a></li>
+      </ul>
+      </div>
+
+      <!-- Search Bar-->
+      <div class = "search-cont" >
+      <ul class="search-bar">
+        <li>
+          <input type="text" placeholder="Search..">
+        </li>
+      </ul>
+    </div>
+    </nav>
+      <!-- Menu Icon -->
+      <div class="sidepanel" id="mySidepanel">
+        <ul class="sidenav">
+          <li class="dropdown-btn">
+            <a>Data <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">Layers</a>
+            <a href="#">Documents</a>
+            <a href="#" >Remote Services</a>
+            <a href="#">Upload Layer</a>
+            <a href="#">Create Layer</a>
+            <a href="#">Upload Document</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>Maps<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">Explore Maps</a>
+            <a href="#">Create Map</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>Apps<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>    
+          <div class="dropdown-container">
+            <a href="#">Explore Apps</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>About<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">People</a>
+            <a href="#">Groups</a>
+            <a href="#">Group Categories</a>
+            <a href="#">Invite Users</a>
+    
+          </div>
+        
+     
+        <li>
+          <a href="#" class="button" href="javascript:void(0)" onclick="closeNav()">
+            <span>C</span><span>L</span><span>O</span><span>S</span><span>E</span>
+           
+            <b class="backgroundHover"></b>
+          </a>
+        </li>
+      </ul>
+      </div>
+
+<!--End of nav bar-->
+<!--Body-->
+<!--Map sidebar-->
+<div class="side-panel" id="side-panel">
+  <div id="sidepanel-heading" class="heading">
+    <span id="content-heading">Story Board</span>
+  </div>
+  <div class="story-tabs">
+
+    <input type="radio" id="tab1" name="tab-control" checked>
+    <input type="radio" id="tab2" name="tab-control">
+    <input type="radio" id="tab3" name="tab-control">
+    <input type="radio" id="tab4" name="tab-control">
+    <ul>
+      <li title="Story 1"><label for="tab1" role="button"><span>1</span></label></li>
+      <li title="Story 2"><label for="tab2" role="button"><span>2</span></label></li>
+      <li title="Story 3"><label for="tab3" role="button"><span>3</span></label></li>
+      <li title="Story 4"><label for="tab4" role="button"><span>4</span></label></li>
+    </ul>
+
+    <div class="slider">
+      <div class="indicator"></div>
+    </div>
+    <div class="content">
+      <section>
+        <h3 style="text-align: left"><u>Basic Services</u></h3>
+        The data displayed also does not indicate the condition of the infrastructure, such as either functional, non-functional or damaged.<br>
+        <br>Same areas seem not to have access to water, sanitation or hygiene facilities.
+      </section>
+      <section>
+        <h3 style="text-align: left"><u>Public Facilities</u></h3>
+        The data displayed shows health facilities, education facilities, public spaces, and security infrastructure.
+        <br><br>
+        Education facilities seem to be the most predominant public facility type in Kibera.
+      </section>
+      <section>
+        <h3 style="text-align: left"><u>Markets</u></h3>
+        In Kibera, there is very low market accessibility due to their location and number
+      </section>
+      <section>
+        <h3 style="text-align: left"><u>Public Transport</u></h3>
+        The data contains both formal (matatus) and informal (bodaboda) stops. 
+      </section>
+    </div>
+  </div>
+  <div data-position="left" class="side-bar">
+    <div class="item tooltipM" id="zoom-in"><i class="fa fa-search-plus"></i>
+      <span class="tooltiptextM">Zoom in</span>
+    </div>
+    <div class="item tooltipM" id="zoom-out"><i class="fa fa-search-minus"></i>
+      <span class="tooltiptextM">Zoom Out</span>
+    </div>
+    <div class="item tooltipM" id="zoom-restore">Kib
+      <span class="tooltiptextM">To Kibera </span>
+    </div>
+    <div class="item tooltipM" id="zoom-panto">KEN
+      <span class="tooltiptextM">To Kenya</span>
+    </div>
+    <div class="item tooltipM card-popup" ><i class="fas fa-info"></i>
+      <span class="tooltiptextM">Hints and attribution</span>
+    </div>
+
+
+    <div class="item bottom tooltipM" id="show_hide"><i class="fa fa-angle-double-right"></i>
+      <span class="tooltiptextM">Storyboard</span>
+    </div>
+    <div class="item bottom tooltipLC" id="LCshow_hide"><i class="fa fa-angle-double-right"></i>
+      <span class="tooltiptextLC">Layers</span>
+    </div>
+  </div>
+</div>
+
+<div class="geomap" id="geomap">
+  <script src="js/Geoportal.js"></script>
+</div>
+<div class="LCside-panel" id="LCside-panel">
+<div class="Layer-Control-Containegrid-container" style="overflow-y: scroll !important;">
+    <div class="grid-1">
+    <div class="ControlsidebarBM">
+    <h2>Base Layers</h2>
+    <input type="radio" name="baseLayerRadioButton" value="Mapbox Basic" checked><i class="LInput"></i>Mapbox Standard</i><br>
+    <input type="radio" name="baseLayerRadioButton" value="EsriImagery"><i class="LInput"></i>Satellite</i><br>
+    <input type="radio" name="baseLayerRadioButton" value="OSM" ><i class="LInput">OSM Standard</i><br>
+    </div>
+    <div class="ControlsidebarV">
+      <h2>Vector Layers</h2>
+      <input type="checkbox" id="Kibera_Boundary" checked><i class="LInput"></i>Kibera Settlement Boundary</i><br>
+      <input type="checkbox" id="Kibera_Transport" checked><i class="LInput"></i>Transport stops (matatus/ boda-boda)</i><br>
+      <input type="checkbox" id="Kibera_Health" checked><i class="LInput"></i>Health Facilities</i><br>
+      <input type="checkbox" id="Kibera_Education" checked><i class="LInput"></i>Education Facilities</i><br>
+      <input type="checkbox" id="Kibera_Markets" checked><i class="LInput"></i>Markets</i><br>
+      <input type="checkbox" id="Kibera_Public_Space"><i class="LInput"></i>Public Space</i><br>
+      <input type="checkbox" id="Kibera_Police_Stations" checked><i class="LInput"></i>Police Stations</i><br>
+      <input type="checkbox" id="Kibera_Community_Centers"><i class="LInput"></i>Community Centers</i><br>
+      <input type="checkbox" id="Kibera_Water_Points"><i class="LInput"></i>Water Points</i><br>
+      <input type="checkbox" id="Kibera_Hand_Washing"><i class="LInput"></i>Hand Washing Facilities</i><br>
+      <input type="checkbox" id="Kibera_Toilet"><i class="LInput"></i>Communal sanitation facility (eg toilet)</i><br>
+      <input type="checkbox" id="Kibera_Waste_Points"><i class="LInput"></i>Waste Points</i><br>    
+      <input type="checkbox" id="Kibera_Religious"><i class="LInput"></i>Religious Facilities</i><br>
+      <input type="checkbox" id="Kibera_Local_Admin_Offices"><i class="LInput"></i>Local_Administrative Offices</i><br>
+      <input type="checkbox" id="Kibera_Local_NGO_Offices"><i class="LInput"></i>Local NGO Offices</i><br>
+      <input type="checkbox" id="Kibera_Flood_Lights"><i class="LInput"></i>Flood Lights</i><br>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="cd-popup" role="alert">
+  <div class="cd-popup-container">
+    <ul>
+      <li>
+        <u>Spatial Data</u>
+        <br>
+        <a><b>Point Data</b> : UN-Habitat, DAU, 2020</a>
+      </li>
+      <br>
+      <li>
+        <u>Basemaps</u>
+        <br>
+        <a><b>Mapbox Standard </b>: Mapbox studio </a>
+        <br>
+        <br>
+        <a><b>Satellite</b> : Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community</a>
+        <br>
+        <br>
+        <a><b>OSM Standard</b> : <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</a>
+      </li>
+    </ul>
+
+    <a href="#0" class="cd-popup-close img-replace">Close</a>
+  </div>
+  <!-- cd-popup-container -->
+</div>
+<!-- cd-popup -->
+
+
+<!--End of Body-->
+
+<!--Footer-->
+<div class="footer">
+  <p style="font-style: normal;">Note :</p><p style="margin-left: 3px;">Optimized for Desktop Application.</p>
+    
+Copyright © 2023 All Rights Reserved.
+ 
+
+  <div class="footer-social-icons">
+    
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+    </ul>
+</div>
+</div>
+
+  
+  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/Sidepanels.js"></script>
+  <script src="js/SideMenu.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script>
+    "use strict";
+  let EventHandler = {
+      ShowHideSideBar: function () {
+          if (document.getElementById("side-panel").className.indexOf("open") !== -1) {
+              document.getElementById("side-panel").className = "side-panel";
+              document.getElementById("side-panel").className += " close";
+              document.getElementById('show_hide').childNodes[0].className = "fa fa-angle-double-right";
+              return;
+          }
+          document.getElementById("side-panel").className = "side-panel";
+          document.getElementById("side-panel").className += " open";
+          document.getElementById('show_hide').childNodes[0].className = "fa fa-angle-double-left";
+      }
+  };
+  
+      document.getElementById('show_hide').onclick = EventHandler.ShowHideSideBar;
+  
+  </script>
+  <script>
+    jQuery(document).ready(function($){
+    //open popup
+    $('.card-popup').on('click', function(event){
+      event.preventDefault();
+      $('.cd-popup').addClass('is-visible');
+    });
+    
+    //close popup
+    $('.cd-popup').on('click', function(event){
+      if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+        event.preventDefault();
+        $(this).removeClass('is-visible');
+      }
+    });
+    //close popup when clicking the esc keyboard button
+    $(document).keyup(function(event){
+        if(event.which=='27'){
+          $('.cd-popup').removeClass('is-visible');
+        }
+      });
+  });
+  </script>
+  <script>
+  let LCEventHandler = {
+      LCShowHideSideBar: function () {
+          if (document.getElementById("LCside-panel").className.indexOf("open") !== -1) {
+              document.getElementById("LCside-panel").className = "LCside-panel";
+              document.getElementById("LCside-panel").className += " close";
+              document.getElementById('LCshow_hide').childNodes[0].className = "fa fa-angle-double-right";
+              return;
+          }
+          document.getElementById("LCside-panel").className = "LCside-panel";
+          document.getElementById("LCside-panel").className += " open";
+          document.getElementById('LCshow_hide').childNodes[0].className = "fa fa-angle-double-left";
+      }
+  };
+  
+      document.getElementById('LCshow_hide').onclick = LCEventHandler.LCShowHideSideBar;
+  
+  </script>
+
+
+</body>
+
+</html>
