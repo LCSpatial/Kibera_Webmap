@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="" lang="">
 
 <head>
   <meta charset="utf-8">
@@ -16,19 +16,18 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/Geoportal.css">
+  <!-- Local files -->
+
   
 
-  <meta name="theme-color" content="#fafafa">
-
-  <!-- Local files -->
   <!--CSS-->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/Geoportal.css">
+ 
 
-   <!-- Non local files-->
- <!-- Non local files-->
+  <!-- Non local files-->
   
   <!--Additional JS-->
   <!--<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>-->
@@ -43,6 +42,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
   
+  <!-- Other Additions-->
+  <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body style="overflow-y: hidden;">
@@ -79,7 +81,7 @@
     <nav id="navbar">
       
       <ul class="bottomnav-left">
-        <li class = "bottomlinks"><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li class = "bottomlinks"><a href="Index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
         <li class = "bottomlinks"><a href="Geoportal.html"class="active"><i class="fa fa-fw fa-globe"></i>Geoportal</a></li>
       </ul>
       </div>
@@ -281,12 +283,13 @@
 
 <!--End of Body-->
 
+
 <!--Footer-->
 <div class="footer">
   <p style="font-style: normal;">Note :</p><p style="margin-left: 3px;">Optimized for Desktop Application.</p>
     
 Copyright © 2023 All Rights Reserved.
- 
+  
 
   <div class="footer-social-icons">
     
@@ -301,80 +304,83 @@ Copyright © 2023 All Rights Reserved.
 </div>
 </div>
 
-  
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="js/plugins.js"></script>
+
+<!--Scripts-->
+  <!--JS-->
+  <!--JS-->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/Sidepanels.js"></script>
+  <script src="js/normalize.js"></script>
   <script src="js/SideMenu.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
-  <script>
-    "use strict";
-  let EventHandler = {
-      ShowHideSideBar: function () {
-          if (document.getElementById("side-panel").className.indexOf("open") !== -1) {
-              document.getElementById("side-panel").className = "side-panel";
-              document.getElementById("side-panel").className += " close";
-              document.getElementById('show_hide').childNodes[0].className = "fa fa-angle-double-right";
-              return;
-          }
-          document.getElementById("side-panel").className = "side-panel";
-          document.getElementById("side-panel").className += " open";
-          document.getElementById('show_hide').childNodes[0].className = "fa fa-angle-double-left";
-      }
-  };
   
-      document.getElementById('show_hide').onclick = EventHandler.ShowHideSideBar;
-  
-  </script>
-  <script>
-    jQuery(document).ready(function($){
-    //open popup
-    $('.card-popup').on('click', function(event){
-      event.preventDefault();
-      $('.cd-popup').addClass('is-visible');
-    });
-    
-    //close popup
-    $('.cd-popup').on('click', function(event){
-      if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
-        event.preventDefault();
-        $(this).removeClass('is-visible');
-      }
-    });
-    //close popup when clicking the esc keyboard button
-    $(document).keyup(function(event){
-        if(event.which=='27'){
-          $('.cd-popup').removeClass('is-visible');
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+<script>
+  "use strict";
+let EventHandler = {
+    ShowHideSideBar: function () {
+        if (document.getElementById("side-panel").className.indexOf("open") !== -1) {
+            document.getElementById("side-panel").className = "side-panel";
+            document.getElementById("side-panel").className += " close";
+            document.getElementById('show_hide').childNodes[0].className = "fa fa-angle-double-right";
+            return;
         }
-      });
-  });
-  </script>
-  <script>
-  let LCEventHandler = {
-      LCShowHideSideBar: function () {
-          if (document.getElementById("LCside-panel").className.indexOf("open") !== -1) {
-              document.getElementById("LCside-panel").className = "LCside-panel";
-              document.getElementById("LCside-panel").className += " close";
-              document.getElementById('LCshow_hide').childNodes[0].className = "fa fa-angle-double-right";
-              return;
-          }
-          document.getElementById("LCside-panel").className = "LCside-panel";
-          document.getElementById("LCside-panel").className += " open";
-          document.getElementById('LCshow_hide').childNodes[0].className = "fa fa-angle-double-left";
-      }
-  };
-  
-      document.getElementById('LCshow_hide').onclick = LCEventHandler.LCShowHideSideBar;
-  
-  </script>
+        document.getElementById("side-panel").className = "side-panel";
+        document.getElementById("side-panel").className += " open";
+        document.getElementById('show_hide').childNodes[0].className = "fa fa-angle-double-left";
+    }
+};
+
+    document.getElementById('show_hide').onclick = EventHandler.ShowHideSideBar;
+
+</script>
+<script>
+  jQuery(document).ready(function($){
+	//open popup
+	$('.card-popup').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
+	
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+	    }
+    });
+});
+</script>
+<script>
+let LCEventHandler = {
+    LCShowHideSideBar: function () {
+        if (document.getElementById("LCside-panel").className.indexOf("open") !== -1) {
+            document.getElementById("LCside-panel").className = "LCside-panel";
+            document.getElementById("LCside-panel").className += " close";
+            document.getElementById('LCshow_hide').childNodes[0].className = "fa fa-angle-double-right";
+            return;
+        }
+        document.getElementById("LCside-panel").className = "LCside-panel";
+        document.getElementById("LCside-panel").className += " open";
+        document.getElementById('LCshow_hide').childNodes[0].className = "fa fa-angle-double-left";
+    }
+};
+
+    document.getElementById('LCshow_hide').onclick = LCEventHandler.LCShowHideSideBar;
+
+</script>
 
 
 </body>

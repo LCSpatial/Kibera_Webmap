@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Police_Stations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Ayany estate", "Settlement": "Kibera", "FacilityTy": "Police station", "FacilityNa": "Ayani sub-police post", "ManagingOr": null, "Donor": null, "Altitude": 1766.0, "fclass": "Police station", "name": "Ayani sub-police post" }, "geometry": { "type": "Point", "coordinates": [ 4093871.613930523395538, -145862.220349706709385 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Toi Market", "Settlement": "Kibera", "FacilityTy": "Police station", "FacilityNa": "Community  police post", "ManagingOr": null, "Donor": null, "Altitude": 1777.7, "fclass": "Police station", "name": "Community  police post" }, "geometry": { "type": "Point", "coordinates": [ 4094290.239768613129854, -145479.914093047380447 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "soweto west", "Settlement": "Kibera", "FacilityTy": "Police station", "FacilityNa": "Community police post", "ManagingOr": null, "Donor": null, "Altitude": 1887.1, "fclass": "Police station", "name": "Community police post" }, "geometry": { "type": "Point", "coordinates": [ 4093841.065632689744234, -146490.959805931895971 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "D.C village", "Settlement": "Kibera", "FacilityTy": "Police station", "FacilityNa": "DC police post", "ManagingOr": null, "Donor": null, "Altitude": 1761.3, "fclass": "Police station", "name": "DC police post" }, "geometry": { "type": "Point", "coordinates": [ 4095190.814432837069035, -145416.259805176407099 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Toi Market", "Settlement": "Kibera", "FacilityTy": "Police station", "FacilityNa": "Police  Community post", "ManagingOr": null, "Donor": null, "Altitude": 1816.4, "fclass": "Police station", "name": "Police  Community post" }, "geometry": { "type": "Point", "coordinates": [ 4094182.816411640495062, -145829.919556584209204 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Silanga", "Settlement": "Kibera", "FacilityTy": "Police station", "FacilityNa": "Undugu police post", "ManagingOr": null, "Donor": null, "Altitude": 1723.7, "fclass": "Police station", "name": "Undugu police post" }, "geometry": { "type": "Point", "coordinates": [ 4096516.443631868809462, -146683.779016990214586 ] } }
+]
+}

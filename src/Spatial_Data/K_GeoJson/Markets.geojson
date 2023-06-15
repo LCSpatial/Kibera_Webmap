@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "Markets",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "hawkers market", "Settlement": "Kibera", "FacilityTy": "Market", "FacilityNa": "Hawkers market", "ManagingOr": "County government", "Donor": null, "Altitude": 1699.1, "fclass": "Market", "name": "Hawkers market" }, "geometry": { "type": "Point", "coordinates": [ 4094549.984844833612442, -145880.768758539110422 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "soweto east", "Settlement": "Kibera", "FacilityTy": "Market", "FacilityNa": "KIBERA SOWETO MARKET STALLS", "ManagingOr": "National government", "Donor": null, "Altitude": 1699.5, "fclass": "Market", "name": "KIBERA SOWETO MARKET STALLS" }, "geometry": { "type": "Point", "coordinates": [ 4097005.69283053278923, -146438.069069877266884 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Laini saba", "Settlement": "Kibera", "FacilityTy": "Market", "FacilityNa": "Lainsaba", "ManagingOr": "Individual (eg business owner)", "Donor": null, "Altitude": 1670.2, "fclass": "Market", "name": "Lainsaba" }, "geometry": { "type": "Point", "coordinates": [ 4096333.694950632750988, -146043.708874601870775 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Laini saba", "Settlement": "Kibera", "FacilityTy": "Market", "FacilityNa": "Lainyyy", "ManagingOr": "Individual (eg business owner)", "Donor": null, "Altitude": 1670.6, "fclass": "Market", "name": "Lainyyy" }, "geometry": { "type": "Point", "coordinates": [ 4096438.89181512221694, -146104.765216331928968 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Makina", "Settlement": "Kibera", "FacilityTy": "Market", "FacilityNa": "Toi market", "ManagingOr": "Individual (eg business owner)", "Donor": null, "Altitude": 1748.6, "fclass": "Market", "name": "Toi market" }, "geometry": { "type": "Point", "coordinates": [ 4094528.834167335182428, -145872.04651603102684 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": "Toi Market", "Settlement": "Kibera", "FacilityTy": "Market", "FacilityNa": "Toi Market", "ManagingOr": "County government", "Donor": null, "Altitude": 1767.2, "fclass": "Market", "name": "Toi Market" }, "geometry": { "type": "Point", "coordinates": [ 4094585.978939060121775, -145562.683064285665751 ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Village": null, "Settlement": null, "FacilityTy": "Market", "FacilityNa": "Toy Market", "ManagingOr": "Individual (eg business owner)", "Donor": null, "Altitude": 0.0, "fclass": "Market", "name": "Toy Market" }, "geometry": { "type": "Point", "coordinates": [ 4094481.375338710844517, -144770.068637583404779 ] } }
+]
+}

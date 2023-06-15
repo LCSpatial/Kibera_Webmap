@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Kibera_Settlement_Boundary" id="Kibera_Settlement_Boundary">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+	<SimpleField name="snippet" type="string"></SimpleField>
+</Schema>
+<Folder><name>Kibera_Settlement_Boundary</name>
+  <Placemark>
+	<name>Crime: Kibera Slum</name>
+	<description>&lt;html xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot;&gt;
+
+&lt;head&gt;
+
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;
+
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body style=&quot;margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;&quot;&gt;
+
+&lt;table style=&quot;font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px&quot;&gt;
+
+&lt;tr style=&quot;text-align:center;font-weight:bold;background:#9CBCE2&quot;&gt;
+
+&lt;td&gt;Crime: Kibera Slum&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;
+
+&lt;table style=&quot;font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px&quot;&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Title&lt;/td&gt;
+
+&lt;td&gt;Crime: Kibera Slum&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;Visible&lt;/td&gt;
+
+&lt;td&gt;1&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Bydele&lt;/td&gt;
+
+&lt;td&gt;Neighborhoods: Kianda, Olympic Estate, Karanja Road Estate, Nyayo Highrise Estate, Silanga&amp;lt;div&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;Types of Crime: All types&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;Times: Day and night&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/div&amp;gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;Image URL&lt;/td&gt;
+
+&lt;td&gt;&amp;lt;Null&amp;gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Image Link URL&lt;/td&gt;
+
+&lt;td&gt;&amp;lt;Null&amp;gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;DATE&lt;/td&gt;
+
+&lt;td&gt;&amp;lt;Null&amp;gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Type ID&lt;/td&gt;
+
+&lt;td&gt;1&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr bgcolor=&quot;#D4E4F3&quot;&gt;
+
+&lt;td&gt;Shape__Area&lt;/td&gt;
+
+&lt;td&gt;2954915.199818&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Shape__Length&lt;/td&gt;
+
+&lt;td&gt;11055.35651&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Kibera_Settlement_Boundary">
+		<SimpleData name="altitudeMode">clampToGround</SimpleData>
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="snippet"></SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>36.791634338373,-1.30915364873601,0 36.7910324671326,-1.30856091533882,0 36.7901341518485,-1.30701621552452,0 36.7892358365644,-1.30658513633693,0 36.7867025874632,-1.30607322970562,0 36.7851125694103,-1.30576788184075,0 36.7837830627898,-1.30632469262526,0 36.7824535561693,-1.30718685101583,0 36.7808186223522,-1.30902791742104,0 36.7788423287271,-1.31117432971831,0 36.7775128221066,-1.31177604329575,0 36.7767402709623,-1.31143477292629,0 36.7759317872066,-1.31112942571416,0 36.7750694045338,-1.31117432971831,0 36.7741261734855,-1.3105726159962,0 36.7733536223412,-1.3095847274823,0 36.7726709027252,-1.3079592009893,0 36.772625986961,-1.30795920098931,0 36.7723205597644,-1.30782448880172,0 36.7718983515809,-1.30817474047439,0 36.7718085200525,-1.309503900223,0 36.7719342841923,-1.31031217269855,0 36.773138026673,-1.31228794876268,0 36.7745573648219,-1.31349137523704,0 36.77562636001,-1.31366201028724,0 36.7751951686736,-1.31435353116089,0 36.7750694045338,-1.31499116712139,0 36.7753748317304,-1.31554797585515,0 36.7756712757742,-1.3163652271586,0 36.775455680106,-1.31730820909897,0 36.7768301024907,-1.31782011343145,0 36.7797496271641,-1.31834099843372,0 36.7824086404051,-1.3179997289618,0 36.7846813780739,-1.31636522715862,0 36.7862264803626,-1.31589822644657,0 36.7881578582235,-1.31546714878861,0 36.7890561735076,-1.31456008930675,0 36.7900892360843,-1.31503607105613,0 36.7901790676127,-1.31602395741609,0 36.7903946632809,-1.31649095810458,0 36.7913738269406,-1.31667057373073,0 36.791975698181,-1.31778419032382,0 36.7932692721901,-1.31838590230814,0 36.7947245429504,-1.31902353723722,0 36.7946796271862,-1.31919417190885,0 36.7969164322436,-1.31894271028343,0 36.7987130628119,-1.31894271028342,0 36.7994047655806,-1.31868226785884,0 36.8000874851966,-1.31756865166728,0 36.8010666488562,-1.31626643855377,0 36.8019110652233,-1.31642809263241,0 36.8028812457302,-1.31659872748185,0 36.8034112517478,-1.31651790044934,0 36.8042916007262,-1.31698490104532,0 36.8054324611371,-1.31685917012427,0 36.8062678943513,-1.31730820909897,0 36.8091874190247,-1.31492830161143,0 36.8081184238366,-1.31477562822341,0 36.8074267210678,-1.31420085773767,0 36.806851799286,-1.31342850968927,0 36.8062229785871,-1.31213527521332,0 36.805773820945,-1.3137069142459,0 36.8052168654689,-1.31480257058667,0 36.8046149942285,-1.31544020643248,0 36.8032675213023,-1.31535937936245,0 36.8022344587256,-1.31491034003685,0 36.799099338384,-1.31190177447275,0 36.7947245429504,-1.3097553627989,0 36.7935208004697,-1.30953982344965,0 36.792712316714,-1.30924345681423,0 36.7924518052815,-1.3093332648893,0 36.791634338373,-1.30915364873601,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>
