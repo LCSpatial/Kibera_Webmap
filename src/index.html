@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Kibera Webmap</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -20,15 +20,294 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <!-- Local files -->
+  <!--CSS-->
+  <link rel="stylesheet" href="css/base.css">
+
+   <!-- Non local files-->
+  <!--Additional JS-->
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!--Additional CSS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!--Leaflet-->
+     <script>
+      L_NO_TOUCH = false;
+      L_DISABLE_3D = false;
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <script>
+      $(document).ready(function(){
+    $(".openbtn").click(function(){
+      $("#div1").fadeIn();
+   
+    });
+  });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+ <style>
+   .map {
+    height: 100%;
+    width: 100vw;
+    
+  }
+ </style>
 </head>
 
 <body>
+  <!-- Nav bar-->
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+      <!--Navbar logo and topic-->
+      <ul class="logo">
+        <li>
+          <a href="index.html"></a><i class="fab fa-500px"></i> 
+        </li>
+        <li>
+          <li><a href="#home"><i aria-hidden="true"></i><h1> Mapping of Kibera Slum</h1></a>
+        </li>
+      </ul>
+
+  
+      <!-- Navbar Links -->
+        <ul class="topnav-right">
+          <li class = "toplinks"><a href="#home"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+          <li class = "toplinks" style="border-right: solid 1px rgba(160, 160, 160, 0.3);"><a href="#home"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign in</a></li>
+        </ul> 
+        <ul class="menuIcon openbtn " onclick="openNav()" style="right: -10px !important; top:2px !important;">
+        <li> 
+          <span class="icon icon-bars"></span>
+          <span class="icon icon-bars overlay"></span>
+        </li>
+        </ul>  
+    </div>
+  </nav>
+
+    <!--Second navbar-->
+    <nav id="navbar">
+      
+      <ul class="bottomnav-left">
+        <li class = "bottomlinks"><a href="Index.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li class = "bottomlinks"><a href="Geoportal.html"><i class="fa fa-fw fa-globe"></i>Geoportal</a></li>
+      </ul>
+      </div>
+
+      <!-- Search Bar-->
+      <div class = "search-cont" >
+      <ul class="search-bar">
+        <li>
+          <input type="text" placeholder="Search..">
+        </li>
+      </ul>
+    </div>
+    </nav>
+      <!-- Menu Icon -->
+      <div class="sidepanel" id="mySidepanel">
+        <ul class="sidenav">
+          <li class="dropdown-btn">
+            <a>Data <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">Layers</a>
+            <a href="#">Documents</a>
+            <a href="#" >Remote Services</a>
+            <a href="#">Upload Layer</a>
+            <a href="#">Create Layer</a>
+            <a href="#">Upload Document</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>Maps<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">Explore Maps</a>
+            <a href="#">Create Map</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>Apps<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>    
+          <div class="dropdown-container">
+            <a href="#">Explore Apps</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>About<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">People</a>
+            <a href="#">Groups</a>
+            <a href="#">Group Categories</a>
+            <a href="#">Invite Users</a>
+    
+          </div>
+        
+     
+        <li>
+          <a href="#" class="button" href="javascript:void(0)" onclick="closeNav()">
+            <span>C</span><span>L</span><span>O</span><span>S</span><span>E</span>
+           
+            <b class="backgroundHover"></b>
+          </a>
+        </li>
+      </ul>
+      </div>
+<!--End of Navbar-->
+
+<!--Header-->
+<div class="header-a" id="headersection">
+    <h2>Kibera Slums: Mapping Life in the Largest Urban Slum in Africa</h2>
+  
+    <text style="font-size:25px; font-weight: lighter;">Welcome to Kibera, a vibrant community in Nairobi, Kenya. Through desktop research, we have mapped the amenities, security, public transport, water, toilets, household sizes and congestion, education, health, markets, public space, water collection, and more in this unique urban setting. Discover the dynamic portrait of Kibera on our web map. </text>
+    <!--|<p style="font-size:12px; color: blue;">Photo by <a href="https://unsplash.com/@nabilnaidu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nabil Naidu</a> on <a href="https://unsplash.com/photos/tG_zD9urNzc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>-->
+</div>
+<!--End if header-->
+
+<!--Intro-->
+<div>
+    <h3>Discover : Kibera</h3>
+    <form class="search" action="">
+      <input type="search" placeholder="Search here..." required>
+      <button type="submit">Search</button>
+    </form> 
+    
+  </div>
+
+ <!--Kibera Info-->
+ <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+ <div class="body-content">
+    <h3>Kibera Slum | <u>Nairobi County.</u></h3>
+  
+    <div class="county-map" id = 'map'>
+      <script src="JS/leaflet.js"></script>
+    </div>
+
+    <section class="tabs">
+ 
+      <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+      <label for="tab-1" class="tab-label-1">About Kibera</label>
+  
+      <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+      <label for="tab-2" class="tab-label-2">Accessibility</label>
+  
+      <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3"/>
+      <label for="tab-3" class="tab-label-3"> Basic Services</label>
+  
+      <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4"/>
+      <label for="tab-4" class="tab-label-4"> Public Facilities</label>
+  
+      <!--<div class="clear-shadow"></div>-->
+  
+      <div class="content">
+        <div class="content-1">
+         <h3><u>Kibera</u></h3>
+         <br>
+          <p>Kibera is a vast, informal settlement in Nairobi, Kenya. It is home to an estimated 1.7 million people, making it the largest slum in Africa. Kibera is a densely populated area with poor infrastructure and limited access to basic services. Residents of Kibera face a number of challenges, including poverty, unemployment, crime, and disease. Despite these challenges, Kibera is a vibrant community with a strong sense of solidarity. Residents of Kibera have made significant progress in improving their living conditions, and they continue to work hard to build a better future for themselves and their children.</p>
+        </div>
+        <div class="content-2">
+          
+          <h3><u>Kibera Accessibility</u></h3>
+          <br>
+          <p> Kibera is a very large and dense settlement, so accessibility can be a challenge.
+            There are a number of factors that contribute to the lack of accessibility in Kibera. These include:
+        </p>
+        <br>
+        <ul>
+            <li>The poor state of the roads: The roads in Kibera are often narrow, unpaved, and in poor condition. This makes it difficult for people to get around, especially those who are disabled or have limited mobility.</li></i>
+            <li>The lack of public transportation: There is limited public transportation in Kibera. This means that people often have to walk long distances to get to their destination. This can be difficult for people who are disabled or have limited mobility.</li>
+            <li>The lack of accessible facilities: There are a lack of accessible facilities in Kibera, such as wheelchair ramps and accessible toilets. This makes it difficult for people with disabilities to participate in activities and access services.</li>
+        </ul>
+        <br>
+        <p>
+            The lack of accessibility in Kibera has a number of negative consequences. These include:
+        </p>
+        <br>
+        <br>
+        <ul >
+            <li>Limited economic opportunities: The lack of accessibility makes it difficult for people to get to work or school. This limits their economic opportunities and makes it difficult for them to improve their living conditions.</li>
+            <li>Reduced social participation: The lack of accessibility makes it difficult for people to participate in social activities and events. This can lead to social isolation and loneliness.</li>
+            <li>Reduced access to healthcare: The lack of accessible healthcare facilities makes it difficult for people to get the care they need. This can lead to health problems and even death.</li>
+        </ul>
+        </div>
+        <div class="content-3">
+         
+          <h3><u>Kibera Basic Services</u></h3>
+          <br>
+          <br>
+          <br>
+          <p>Access to clean water is a major challenge in Kibera. The majority of residents rely on water vendors for their water supply. Water is often contaminated, and residents are at risk of waterborne diseases such as cholera and typhoid.</p>
+          <br>
+          <p>Sanitation is also a major challenge in Kibera. There are few public toilets, and many residents use open defecation. This practice contributes to the spread of disease.</p>
+          <br>
+          </div>
+        <div class="content-4">
+          
+          <h3><u>Kibera Public Facilities</u></h3>
+          <br>
+          <p>Access to education is also a challenge in Kibera. There are few schools, and many children do not attend school. This is due to a number of factors, including poverty, lack of space, and language barriers.
+
+          </p>
+          <br>
+          <p>
+            There are few healthcare facilities in Kibera. The ones that do exist are often overcrowded and understaffed. This makes it difficult for residents to access the healthcare they need.
+        </p>
+    <br>      
+    <p>
+        There are a number of community centers in Kibera that provide a space for residents to gather, socialize, and participate in activities.
+    </p>
+    <br>
+        </div>
+      </div>
+  </section>
+    
+
+  
+    
+  </div> 
+
+<!--Footer-->
+<div class="footer">
+  <p style="font-style: normal;">Note :</p><p style="margin-left: 3px;">Optimized for Desktop Application.</p>
+    
+Copyright © 2023 All Rights Reserved.
+ 
+
+  <div class="footer-social-icons">
+    
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+    </ul>
+</div>
+</div>
+
+  
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/Sidepanels.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -36,6 +315,8 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
 </body>
 
 </html>
